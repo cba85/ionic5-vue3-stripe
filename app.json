@@ -1,0 +1,6 @@
+{
+  "name": "Ionic 5 Vue 3 Stripe Subscription",
+  "description": "Stripe Subscription example in an Ionic 5 / Vue 3 app",
+  "repository": "https://github.com/cba85/teach-ionic5-vue3-stripe",
+  "keywords": ["ionic", "vue", "stripe"]
+}
