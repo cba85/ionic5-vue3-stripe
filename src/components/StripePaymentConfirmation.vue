@@ -1,5 +1,7 @@
 <template>
     <div>
+<p>Merci de confirmer votre paiement de <strong>{{ amount }}</strong></p>
+
         <ion-button color="success" @click="confirmPaymentMethod"
             >Confirmer</ion-button
         >
@@ -14,8 +16,14 @@ import { IonButton } from "@ionic/vue";
 
 export default {
     name: "StripePaymentConfirmation",
-    components: {IonButton},
+    components: { IonButton },
     props: ["stripe", "payment_intent", "payment_method"],
+    computed: {
+        amount() {
+            const amount = this.payment_intent.amount / 100;
+            return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: this.payment_intent.currency }).format(amount);
+        }
+    },
     methods: {
         confirmPaymentMethod() {
             this.stripe
