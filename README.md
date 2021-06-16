@@ -41,8 +41,7 @@ The checkout page handles:
 
 ## TODO
 
-- Handle authentication inside the app like in [Sanctum Vue App example](https://github.com/cba85/teach-laravel-sanctum-auth-vue-app)
-- Use components
+- Handle authentication inside the app like in [Sanctum Vue App example](https://github.com/cba85/teach-laravel-sanctum-auth-vue-app) instead a static token in `.env` file
 
 ## Dependencies
 

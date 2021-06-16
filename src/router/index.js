@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Home from '../views/Home.vue'
 import Checkout from '../views/Checkout.vue'
-import CheckoutSuccess from '../views/CheckoutSuccess.vue'
 
 const routes = [
   {
@@ -17,11 +16,6 @@ const routes = [
     path: '/checkout',
     name: 'Checkout',
     component: Checkout
-  },
-  {
-    path: '/checkout/success',
-    name: 'CheckoutSuccess',
-    component: CheckoutSuccess
   }
 ]
 
