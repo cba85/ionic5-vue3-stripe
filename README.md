@@ -4,7 +4,9 @@ Basic Stripe elements checkout page in a Ionic 5/Vue 3 application.
 
 > For demonstration purpose only
 
-Demo: 
+Demo: https://ionic-stripe.herokuapp.com/
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Requirements
 

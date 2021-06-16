@@ -87,7 +87,7 @@ export default {
 
     axios
       .post(
-        "http://127.0.0.1:8000/api/stripe/intent",
+        `${process.env.VUE_APP_API_URL}/api/stripe/intent`,
         {},
         {
           headers: {

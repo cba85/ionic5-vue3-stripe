@@ -129,7 +129,7 @@ export default {
 
                 await axios
                     .post(
-                        "http://127.0.0.1:8000/api/stripe/subscribe",
+                        `${process.env.VUE_APP_API_URL}/api/stripe/subscribe`,
                         {
                             plan: this.plan,
                             name: this.name,
