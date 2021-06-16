@@ -24,6 +24,7 @@
           @paymentIntent="payment_intent = $event"
           @paymentMethod="payment_method = $event"
           @paymentProcessed="payment_processed = $event"
+          @messageProcessed="message_processed = $event"
         />
 
         <StripePaymentConfirmation
@@ -32,6 +33,7 @@
           :payment_intent="payment_intent"
           :payment_method="payment_method"
           @paymentProcessed="payment_processed = $event"
+          @messageProcessed="message_processed = $event"
         />
 
         <PaymentProcessed v-if="payment_processed" :message_processed="message_processed"/>
